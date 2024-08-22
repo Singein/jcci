@@ -808,7 +808,7 @@ class JCCI(object):
         }
         print(json.dumps(result), flush=True)
         print(f'Impacted api list: {result["impacted_api_list"]}', flush=True)
-        result_json_file_name = self.result_html_file_name.replace('.html', '.json').replace('#', '_').replace('/', '_')
+        result_json_file_name = os.path.basename(self.result_html_file_name.replace('.html', '.json')).replace('#', '_')
         result_json_path = os.path.join(self.output_path, self.project_name, result_json_file_name)
 
         result_json = json.dumps(result, ensure_ascii=False, indent=2)

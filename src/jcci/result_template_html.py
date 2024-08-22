@@ -18,11 +18,9 @@ TEMPLATE = """
     var graphCategories = [];
     var optionGraph = {
         tooltip: {},
-        legend: [
-            {
-                data: []
-            }
-        ],
+        legend: {
+            show: false
+        },
         series: [
             {
                 type: 'graph',
@@ -42,9 +40,6 @@ TEMPLATE = """
                 lineStyle: {
                     color: 'source',
                     curveness: 0.3
-                },
-                legend: {
-                    show: false
                 },
                 // 添加数据缩放组件
                 dataZoom: [
