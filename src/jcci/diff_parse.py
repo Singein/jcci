@@ -45,7 +45,3 @@ def get_diff_info(file_path):
             'line_content_removed': line_content_removed
         }
     return patch_results
-
-
-if __name__ == '__main__':
-    print('jcci')

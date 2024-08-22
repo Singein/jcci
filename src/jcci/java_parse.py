@@ -1002,7 +1002,3 @@ class JavaParse(object):
             futures = [executor.submit(self.parse_java_file, file, commit_or_branch) for file in filepath_list]
             for _ in as_completed(futures):
                 continue
-
-
-if __name__ == '__main__':
-    print('jcci')
