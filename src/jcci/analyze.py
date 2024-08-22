@@ -1,18 +1,20 @@
+import atexit
+import datetime
+import fnmatch
 import json
+import logging
 import os
 import sys
 import time
-import atexit
-import logging
-import datetime
-import fnmatch
-from . import config as config
-from .database import SqliteHelper
-from .java_parse import JavaParse, calculate_similar_score_method_params
-from . import mapper_parse as mapper_parse
-from . import diff_parse as diff_parse
-from . import graph as graph
-from . import constant as constant
+
+from jcci import config
+from jcci import constant
+from jcci import diff_parse
+from jcci import graph
+from jcci import mapper_parse
+from jcci.database import SqliteHelper
+from jcci.java_parse import JavaParse, calculate_similar_score_method_params
+from jcci.result_template_html import TEMPLATE
 
 logging.basicConfig(format='%(asctime)s %(message)s', level=logging.DEBUG)
 
@@ -806,7 +808,6 @@ class JCCI(object):
         }
         print(json.dumps(result), flush=True)
         print(f'Impacted api list: {result["impacted_api_list"]}', flush=True)
-        result_template_html_path = os.path.join(os.path.dirname(__file__), 'result-template.html')
         result_json_file_name = self.result_html_file_name.replace('.html', '.json').replace('#', '_').replace('/', '_')
         result_json_path = os.path.join(self.output_path, self.project_name, result_json_file_name)
 
@@ -815,10 +816,8 @@ class JCCI(object):
             f.write(f'const graphData = \n {result_json}')
 
         with open(self.result_html_file_name, 'w') as w:
-            with open(result_template_html_path, 'r', encoding='utf-8') as f:
-                html = f.read()
-                html = html.replace('#{JS-FILE-PATH}#', os.path.basename(result_json_file_name))
-                w.write(html)
+            html = TEMPLATE.replace('#{JS-FILE-PATH}#', os.path.basename(result_json_file_name))
+            w.write(html)
         logging.info(f'Generating cci result file success, location: {self.result_html_file_name}')
 
     def _start_analysis_diff_and_impact(self):

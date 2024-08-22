@@ -1,4 +1,4 @@
-dist
+
 tests
 src/jcci.egg-info
 .idea
@@ -6,3 +6,15 @@ src/jcci/__pycache__/
 test/
 output/
 temp/
+
+venv/
+__pycache__/
+*.ini
+.eggs/
+*.egg-info
+dist/
+build/
+test_reports/
+.idea/
+.pytest_cache/
+.github/

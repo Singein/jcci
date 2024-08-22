@@ -1,0 +1,195 @@
+CHANGES
+=======
+
+v0.0.1
+------
+
+* [release] 0.0.1
+* 移除多余代码
+* 修改JCCI类，增强参数，增强路径控制，待下一步大改优化。
+* fix loop bug
+* fix loop bug
+* fix loop bug
+* Fix bug #20
+* Create python-publish.yml
+* Fix issue #17
+* FIx max\_relationship\_length loop bug
+* FIx bug
+* fix graph max\_relationship\_length func loop bug
+* Fix bug
+* 多项目联合分析
+* Update readme
+* parse inner interface
+* Fix bug
+* fix bug
+* Fix field endline bug
+* Fix bug
+* Fix bug
+* Fix bug about class field
+* Update readme
+* Update readme
+* Fix map.get bug
+* 修复泛型问题
+* 修复泛型问题
+* 修复泛型问题
+* 修复泛型问题
+* 提升解析效率
+* Fix mapper bug
+* Fix bug
+* add \_parse\_enum
+* add \_parse\_constructors
+* add \_parse\_constructors
+* Fix selectors bug
+* 提升分析效率
+* Update images
+* Update issue templates
+* Fix bug
+* Fix bug
+* FIx bug
+* Fix parse field bug
+* Fix parse field bug
+* Fix parse field bug
+* Fix parse field bug
+* 优化内部类 多级调用
+* 增加内部类处理，优化静态变量分析
+* Fix bug
+* Fix bug
+* Fix bug
+* Fix a.b.c parse bug
+* Fix bug
+* Fix a.b.c parse bug
+* Fix a.b.c parse bug
+* Update Readme
+* Fix method\_end\_line bug
+* setrecursionlimit to 10000
+* Delete .github/FUNDING.yml
+* Create FUNDING.yml
+* Fix Bug #11
+* Add package prefix config
+* Fix Bug #10
+* Fix bug
+* Fix bug about parse java file when have extends
+* Fix bug missing impacted result
+* Fix bug about selector is MemberReference
+* Fix bug
+* Fix bug
+* Fix bug
+* Fix bug
+* gen\_all\_possible\_method\_param\_list break when has 1000 results
+* fix mapper bug
+* FIx mapper bug
+* Fix bug
+* Fix bug
+* Fix parameter bug with capital formatter
+* Fix loop bug
+* Fix bug
+* Fix ClassCreator missing bug
+* Fix analyze\_class\_method func cci\_path bug
+* Fix \_get\_api\_part\_route function bug
+* Fix analyze\_class\_method function project\_id bug
+* Update readme add Thanks To
+* Fix ClassCreator missing bug
+* Fix ClassCreator missing bug
+* FIx 'MethodInvocation' object has no attribute 'type' bug
+* Fix bug about same package miss import
+* Fix config bug
+* Fix normal method api\_path is [ALL]
+* fix bug
+* add dingding group
+* Fix bug
+* fix bug
+* Fix bug
+* update readme
+* Fix bug
+* Add analyze\_two\_branch function
+* Fix bug
+* fix bug
+* fix bug
+* fix bug
+* Fix bug
+* Fix bug
+* update readme
+* Fix style
+* Fix bug
+* add donation
+* new version 0.1.0
+* fix bug
+* Update README.md
+* Update readme
+* v0.0.15
+* support branches diff analyze
+* support branches diff analyze
+* Update readme
+* Update readme
+* fix bug
+* Fix bug
+* fix bug
+* Fix bug declartor
+* Fix bug
+* Fix code style
+* Fix code style
+* Use logging
+* fix bug
+* fix bug
+* Fix Style error
+* Fix bug
+* Fix bug
+* Fix bug
+* Fix bug
+* fix bug
+* fix bug
+* fix bug
+* fix bug
+* fix bug
+* fix bug
+* fix bug
+* fix bug
+* shorten commit id
+* fix bug
+* fix bug
+* 优化关系图展示
+* 增加mybatis mapper xml文件变更影响分析；add mybatics xml change impact
+* Update jcci-result.html
+* Update README.md
+* Update README.md
+* Update jcci-result.html add graph view
+* update readme
+* update readme
+* fix bug
+* fix \_analyze\_java\_file bug
+* update pypi version to 0.0.8
+* Fix class in method bug
+* Fix method endline bug
+* rm unuse log
+* Fix declarators in method bug
+* update readme
+* update wechat qr
+* fix method analyze bug
+* update communicate
+* add pyproject.toml
+* init again
+* Update README.cn.md
+* Update README.md
+* Delete jcci.jpg
+* update dingtalk group img
+* Add files via upload
+* Delete jcci.jpg
+* Add files via upload
+* Update README.cn.md
+* Update README.md
+* Update README.md
+* Add files via upload
+* Add files via upload
+* Update README.cn.md
+* Update README.md
+* Update README.cn.md
+* Update README.md
+* Create README.cn.md
+* Update README.md
+* Add files via upload
+* Update README.md
+* Add files via upload
+* Add files via upload
+* Add files via upload
+* Add files via upload
+* Initial commit
