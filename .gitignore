@@ -4,3 +4,5 @@ src/jcci.egg-info
 .idea
 src/jcci/__pycache__/
 test/
+output/
+temp/
